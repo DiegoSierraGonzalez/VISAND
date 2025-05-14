@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visand | Lentes y Optometría</title>
+  <style>
+    :root {
+      --primary-color: #0a3d62;
+      --secondary-color: #3c6382;
+      --accent-color: #38ada9;
+      --background-color: #f8f9fa;
+      --text-color: #2f3640;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: var(--secondary-color);
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+    }
+
+    nav a:hover {
+      background-color: var(--accent-color);
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .hero {
+      background-color: var(--accent-color);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .products, .services, .about, .contact {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Visand</h1>
+    <p>Tu visión, nuestro compromiso</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Bienvenido a Visand</h2>
+    <p>Expertos en lentes oftálmicos, de sol y servicios de optometría personalizados.</p>
+  </section>
+
+  <section class="products" id="productos">
+    <h2>Productos</h2>
+    <div class="card">
+      <h3>Lentes Oftálmicos</h3>
+      <p>Con graduación exacta y estilos modernos.</p>
+    </div>
+    <div class="card">
+      <h3>Lentes de Sol</h3>
+      <p>Protección UV con diseño para todos los gustos.</p>
+    </div>
+    <div class="card">
+      <h3>Accesorios</h3>
+      <p>Estuches, paños de microfibra, líquidos y más.</p>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <h2>Servicios</h2>
+    <div class="card">
+      <h3>Examen de la Vista</h3>
+      <p>Evaluación optométrica profesional.</p>
+    </div>
+    <div class="card">
+      <h3>Adaptación de Lentes de Contacto</h3>
+      <p>Para córneas normales, especiales y queratocónicas.</p>
+    </div>
+  </section>
+
+  <section class="about" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Visand nace del compromiso por mejorar la salud visual de nuestra comunidad, ofreciendo productos de calidad y atención personalizada.</p>
+  </section>
+
+  <section class="contact" id="contacto">
+    <h2>Contacto</h2>
+    <div class="card">
+      <p>WhatsApp: <a href="https://wa.me/5210000000000" target="_blank">Enviar mensaje</a></p>
+      <p>Instagram: <a href="https://instagram.com/visand" target="_blank">@visand</a></p>
+      <p>Email: contacto@visand.com</p>
+      <p>O envíanos un mensaje:</p>
+      <form>
+        <input type="text" placeholder="Nombre" required /><br/><br/>
+        <input type="email" placeholder="Correo electrónico" required /><br/><br/>
+        <textarea placeholder="Tu mensaje" rows="5" required></textarea><br/><br/>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Visand. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
